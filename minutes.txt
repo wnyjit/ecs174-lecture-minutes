@@ -1,0 +1,204 @@
++=+=+=+=+=+=+=+= 9 - 30 tuesday +=+=+=+=+=+=+=+=
+where slides are found - 6
+
+past lecture quick review - 8
+	why computer vision is difficult, list of challenges computers face - 11
+		stereo vision spiel - 14
+		context - 16
+
+syllabus covering - 18
+	"let me know if you're interseted in learning more, i can change the syllabus" - 22
+	"final will be easy" , final project - 23
+
+"have you heard of these before?" - 32
+
+images and filters - 35
+	what is an image? - 35
+		rgb, grayscale - 36
+		tensor, matrix, array, scalar, cubes, dimensions - 37
+		an image is a cube/3d tensor (3rd dimension is color/grayscale) - 38
+
+	images as functions - 38
+
+	image operations - 40
+			"assume everything is grayscale for this lecture" - 42
+		edge detection - 43
+		converting image to vector - 43
+		comparing two images - 44
+		denoising - 45
+		
+	image filtering/convolution - 46
+		g-matrix - 47
+		blurring/smoothing - 49
+			what does it mean to convolution/convolving? - 50
+			explaining the formula - 52
+			handling the border of the image (0 padding) - 53
+		box filter - 57
+			why choose 1/9 - 57
+
+		this filter does nothing - 59
+				einsteins eye - 1.00
+		left shift filter - 1.01
+		sharpening filter / brightness subtracted by smoothing - 1.01
+		edge detection filter vertical and horizontal - 1.05
+		
+		gaussian filter - 1.09
+			what does the standard deviation do? variance? - 1.15
+			gaussian vs box - 1.16
+			combining gaussian filters - 1.18
+			seperable filters are more efficient - 1.19		
++=+=+=+=+=+=+=+= 9 - 30 tuesday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 10 - 2 thursday +=+=+=+=+=+=+=+=
+exams and cheatsheets - 5
+
+filters review - 8
+	discretizing meaning and why we do it - 8
+	pixels, cameras, RGB, displays - 9
+	operations - 10
+		image filtering - 11
+		why our eyes our blurry, pinhole cameras, pupils & retinas - 12
+			early cameras - 14
+				lenses - 20
+			why our eyes are blurry - 22
+		other filters, edge detection, gaussian - 24
+
+box filter algorithm / sums of rectangular regions - 26
+	calculating the sum more efficiently  - 28
+	"this way is efficient but its not the best" - 31
+	the best way - 32
+		cant be done with gaussian, and their is a big 1-time cost  - 34
+
+addressing constant blur to remove noise without removing detail - 35
+	bilateral bilter on a height field - 37
+		theory and general math behind it - 39
+			"big differences will have much less weight... the edge will not be smoothed out" - 40
+			"this is not convolution anymore" - 42
+		explaining and going deeper into math - 42
+		the result of the bilateral filtering - 45
+			"its not a convolution" - 48
+
+AI image generation - 49
+
+borders - 51
+
+sampling - 53
+	image scaling / sub-sampling / size reduction - 54
+		sub sampling by using every other pixel value - 55
+			interpolation/averaging - 55
+			the quality drops a lot, information is lost, artifacts are introduced - 57
+		sub sampling with gaussian pre-filtering introduction - 58
+
+	fourier transform - 59
+		waves visualized inside the fourier domain - 1.09
+		jpg and mp3 file compression and how our ears hear - 1.11
+			Nyquist and why things are sampled at 44khz when we can only hear 22khz - 1.16
+			the old phone system's limitations  - 1.19
++=+=+=+=+=+=+=+= 10 - 2 thursday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 10 - 7 tuesday +=+=+=+=+=+=+=+=
+past lecture recap - 6
+	artifacts - 6
+	sub sampling - 7
+	gaussian pre-filtering - 8
+	fourier transform - 9
+	nyquist rate sampling & aliasing - 10
+		avoiding aliasing - 13
+
+	using fourier to make an image(i think?) - 17
+		fourier holds in any dimension - 17
+
+	more on subsampling - 23
+		sampling too much? - 25
+		phone sample example - 27
+
+what aliasing looks like - 29
+	helicopter, car wheel example - 32
+	"this is because of UNDERsampling, oversampling has no effect" - 36
+		
+upsampling - 37
+	upsampling methods (nearest neighbor, bilinear, bicubic) - 38
+	superresolution / ML for upsampling, its on your phone - 43
+	
+oversampling downsides - 44
+
+edge detection - 45
+	recognition is very related to edge detection - 45
+	some neurons are designed for edge detection - 47
+	why mimicking humans isnt ideal - 49
+
+	what makes an edge - 50
+		discontinuity (surface normal, depth, surface color, illumination) - 51
+		
+	finding edges using algorithms - 53
+		1st, 2nd derivatives - 54
+
+	image gradient, derivative for an image/vector / high dimension derivatives - 55
+		partial derivative - 56
+		"its always pointing at the whiter part" - 1.00
+		
+		calculate derivative of discrete/non-continuous signal - 1.03
+	
+	sobel operator - 1.06
+	noise vs derivatives - 1.11
+		Derivative Theorem of Convolution - 1.12
+		canny edge detection, orientation of an edge - 1.16
++=+=+=+=+=+=+=+= 10 - 7 tuesday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 10 - 9 thursday +=+=+=+=+=+=+=+=
+edge detection recap - 7
+	saddle point of derivative - 13
+	sobel filter - 15
+	Derivative Theorem of Convolution - 17
+
+canny edge detection - 19
+	hough space - 24
+
+intro to machine learning - 33
+	recognition function, y=f(x) - 34
+	training vs testing - 36
+		"we dont want to memorize" - 37
+			self driving car example - 40
+
+	steps to machine learning - 42
+	efficiency & power consumption & edge AI - 45
+
+	feature extraction, turning an image into a vector - 48
+		some possible "obsolete" features - 50
+			deeplearning makes it obsolete (end to end) - 53
+
+	classification - 54
+		nearest neighbor - 54
+			simple but slow - 56
+		linear - 57
+		decision trees / 20 questions - 1.00
+
+	supervision , annotation - 1.02
+		spectrum of supervision - 1.07
+
+	generalization vs memory - 1.11
+	diagnosing generization ability / a model's ability - 1.13
+		overfitting & underfitting - 1.13
+			freedom of a model - 1.14
+			cross validation - 1.18
+			"if you increase the size of the model, you need more data to accomodate" - 1.21
++=+=+=+=+=+=+=+= 10 - 9 thursday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 10 - 14 tuesday +=+=+=+=+=+=+=+=
+nothing today
++=+=+=+=+=+=+=+= 10 - 14 tuesday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
