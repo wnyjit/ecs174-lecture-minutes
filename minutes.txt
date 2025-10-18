@@ -202,3 +202,54 @@ nothing today
 
 ================================================================================================================================
 ================================================================================================================================
+
++=+=+=+=+=+=+=+= 10 - 16 thursday +=+=+=+=+=+=+=+=
+turning friday discussion into lecture & vice versa - 10
+hw1 restrictions & logistics - 11
+
+machine learning review - 19
+	knobs / parameters - 20
+	learnable function - 21
+	supervised learning - 21
+	training and testing steps - 23
+	classifiers - 24
+		nearest neighbor - 24
+		linear - 26
+			what is a parametric model - 26
+	types of supervision - 27
+	generalization vs memory - 29
+		this set is "held out" - 29
+	undefitting , overfitting - 30
+	model complexity & training size & test error - 35
+		more data = bigger models - 36
+	validation , choosing the best model - 37
+		"we dont prefer the model on the test set a lot..." - 37
+
+midterm in early november - 42
+
+data set history - 43
+
+neural networks - 53
+	"AI nowadays are neural networks" - 54
+	how binary classifier works: variables, weights, threshold - 54
+		why we transpose - 56
+		why we add bias into our feature matrix - 57
+	spam example - 58
+		"whats a word that should have negative weight" - 1.00
+		"whats a word that should have zero weight?" - 1.01
+				*mic is out* - 1.01
+				*mic is back* - 1.02
+	geometry visualization - 1.04
+		spam example - 1.04
+		new example - 1.08
+			"why is it 90 degrees?" - 1.09
+		hyperplane - 1.10
+
+	two-layer network architecture - 1.12
+		"linear models can't solve every problem", linearly non-seperable , non-linear model - 1.13
+		deep model - 1.13
+		
++=+=+=+=+=+=+=+= 10 - 16 thursday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
