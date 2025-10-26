@@ -206,7 +206,11 @@ nothing today
 +=+=+=+=+=+=+=+= 10 - 16 thursday +=+=+=+=+=+=+=+=
 turning friday discussion into lecture & vice versa - 10
 hw1 restrictions & logistics - 11
-
+	late day policy - 11
+	prebuilt libraries - 12
+	what to submit - 17
+	which submission counts - 18
+	
 machine learning review - 19
 	knobs / parameters - 20
 	learnable function - 21
@@ -247,9 +251,91 @@ neural networks - 53
 
 	two-layer network architecture - 1.12
 		"linear models can't solve every problem", linearly non-seperable , non-linear model - 1.13
-		deep model - 1.13
-		
+		deep model - 1.13		
 +=+=+=+=+=+=+=+= 10 - 16 thursday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+		
++=+=+=+=+=+=+=+= 10 - 21 tuesday +=+=+=+=+=+=+=+=
+you dont need permission for late days - 10
+
+previous lecture review - 12
+	perceptron - 12
+	geometric visualization - 15
+	
+MLP multi-layer perceptron - 17
+	non-linearity / link function / activation function - 19
+		we want derivable functions - 21
+	hidden layers / hidden neurons - 22
+		more neurons = more capacity - 23
+		finding the sweet spot, over-training- 25
+			"i can always use SQL for 100%!" - 25
+	temperature prediction example - 26
+		ground truth - 27
+		cost function, objective function, loss function, energy function, error function - 27
+				machine learning nowadays, "optimization" - 31
+					UPS/FEDEX navigation directions example "never did left turns" - 31
+			using absolute value vs squaring - 34
+				lasso - 38
+
+optimization framework, and loss minimization - 39
+	argument / index of array - 40
+	w, freedom - 40
+	why we use 1/2 - 43
+	regularization - 45
+
+"How can we optimize?" - 46
+gradient descent - 47
+	most used and easy to understand - 47
+	"its just the derivative" - 49
+	gradients & partial derivative - 50
+		gradient = vector of partial derivatives - 53
+	"derivative calculates going up the hill, but we want to go down the hill..." - 55
+	step size / learning rate, local minima - 56
+
+ADAM gradient descent & automatic learning rate - 1.00
+
+MLP multi layer perceptron - 1.01
+
+gradient descent update rule / automatic learning rate - 1.02
+
+"how to calculate derivatives?" - 1.04
+	chain rule review - 1.08
+	bringing it back into MLPs - 1.11
+		"this is time consuming" - 1.11
+	back propogration and the chain rule - 1.12
+		example - 1.14
+		forward pass - 1.20		
++=+=+=+=+=+=+=+= 10 - 21 tuesday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+		
++=+=+=+=+=+=+=+= 10 - 23 thursday +=+=+=+=+=+=+=+=
+previous lecture review - 7
+	hw answers will be provided - 7
+	linear classifier - 7
+	multi layer perceptron - 8
+	non-linearity / activation / link function - 9
+	optimizing the number of hidden layers - 10
+		optimization framework - 10
+		the 2 arguments - 12
+	gradient descent algorithm - 12
+		gradient vector / partial derivative vector - 14
+		learning rate, ADAM - 18
+		
+momentum, step sizes & inertia, avoiding local minima - 21
+	"the number of minimas is infinite" & little ant analogy - 28
+		alchemey and black magic - 29
+				
+optimization is slow - 33
+	imageNET dataset, resNET take 20 hours to calculate - 33
+	stochastic gradient / minibatch gradient, "i dont need to use all my training data" - 34
+		random sampling - 36
+		mini-batch & stochastic definitions - 37
+	IID independentent identically sampled - 38
++=+=+=+=+=+=+=+= 10 - 23 thursday +=+=+=+=+=+=+=+=
 
 ================================================================================================================================
 ================================================================================================================================
