@@ -335,7 +335,35 @@ optimization is slow - 33
 		random sampling - 36
 		mini-batch & stochastic definitions - 37
 	IID independentent identically sampled - 38
+	EPOCH - 39
+	HHD harddrives are slow, ram is 42 - fast
+	
+gradient descent quick refresh - 48
+	forward pass backward pass -  53
+	
+two types of compute - 55
+
+history of back propogation algorithm - 1.00
+	auto differentiation, facebook pytorch, google tensorflow. numpy - 1.03
+
+initializing - 1.05
+	multiple solutions = #(hidden neurons)_Factorial - 1.06
+	infinite number of local minima - 1.09
+	
+DAG directed acyclic graph - 1.11
+
+breadth vs depth, vanishing gradient exploding gradient - 1.12
+
+CPU vs GPU - 1.16
+		*mic goes out* - 1.17
+		*mic comes back* - 1.18
 +=+=+=+=+=+=+=+= 10 - 23 thursday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 10 - 28 tuesday +=+=+=+=+=+=+=+=
++=+=+=+=+=+=+=+= 10 - 28 tuesday +=+=+=+=+=+=+=+=
 
 ================================================================================================================================
 ================================================================================================================================
