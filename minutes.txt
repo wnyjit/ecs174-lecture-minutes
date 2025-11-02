@@ -363,7 +363,113 @@ CPU vs GPU - 1.16
 ================================================================================================================================
 
 +=+=+=+=+=+=+=+= 10 - 28 tuesday +=+=+=+=+=+=+=+=
+no numerical examples for gradient descent - 6
+hw2, gradient descent - 7
+
+previous lecture review - 8
+	dynamic programming - 9
+	momentum - 9
+	
+activation functions - 12
+	why dont we use sign function - 12
+		sign vs step vs sine (lol whoever asked, thank you) - 14
+	sigmoid, tan, and vanishing gradient, saturation - 15
+	ReLu function, rectified linear unit - 17
+		but derivative = 0 here - 18
+			leaky ReLu - 18
+				"doesnt help much" - 19
+		ReLu is better than sigmoid - 19
+			"what about this non-differentiable point?", engineer vs math approach - 20
+			
+convolutional neural networks CNN - 22
+	end to end learning - 23
+	MLP 3d weight visualization - 26
+	
+tensorflow playground - 27
+	linear cannot solve this problem - 29
+	small,large learning rate - 31
+	epoch - 32
+		"usually we do 50 epoch, each epoch takes 20 minutes" - 32
+	large step sizes - 34
+		"it converges but still fluctuates" - 34
+		"theres no benefit to large step sizes" - 34
+	"how do you know you're done?" - 35
+		there is automation but todays we mostly use babysitting - 36
+	ReLu vs sigmoid - 36
+		ReLu is a polygonal, and it can never smooth out the corners - 37
+	regularization, L1, L2, absolute value, lasso, sparse - 38
+		L1 vs L2 - 41
+			lambda regularization rate - 43
+			capacity reduction - 46
+				sparse - 47
+	adding hidden layers, neurons - 50
+		"if its failing on training, the model is lacking capacity" - 51
+		breadth vs depth, "more layers is better but problematic" - 51
+	adding input - 52
+	why the model isnt a perfect spiral - 53
+		*mic out* - 53
+		*mic in* - 55
+	classification vs regression/prediction - 55
+		"sometimes extra input can be confusing" - 57
+	adding noise - 57
+	bach size, small vs large - 58
+		bach size and training time - 1.00
+			mini bach has more updates which is better - 1.00
+			cons of mini bach - 1.03
+		even though this one is 20k+ epochs to solve, its because our input is small - 1.06
+			half epochs - 1.06
+
+CNN is an MLP with convolutions instead of linear layers - 1.09
+	tensor review - 1.09
+	weight mask, image, feature map, channels, convolutional layer, fully connected, & calculating their sizes - 1.10 
+	feature extraction - 1.16
+		low,mid,high level - 1.19
+	flow of CNN - 1.19
+		spatial pooling, max pooling - 1.21
 +=+=+=+=+=+=+=+= 10 - 28 tuesday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 10 - 30 thursday +=+=+=+=+=+=+=+=
+swift coding club - 6
+
+past lecture review - 8
+	combining convolutions while avoiding linearity - 9
+	ReLu, avoiding saturation - 11
+	spatial pooling, "reduce the amount of info we pass forward" - 18
+	
+boat cnn example - 21
+	fully connected meaning - 
+	every layer has an activation after it - 23
+	softmax activation fubction, probability distribution - 25
+	long vector dimension, vectorization - 
+	"how i analyze a research paper" - 30
+	1-hot encoding - 31
+	dimension of tensor,vector - 32
+	"maybe i should stop recording" - 35
+	calculating loss - 38
+	"it must be differentiable" - 44
+	non differentiable and reinforcement learning - 45
+	not using fully connected for convolution, "detect the cat anywhere in the image" - 49
+	
+SIFT, AlexNet, deep learning, end to end, & history - 51
+	lynette's digit detection - 53
+	AlexNet and using GPU - 55
+	AlexNet changes the game - 1.04
+	
+looking inside what the model sees, explainable AI - 1.09
+	layer 1 - 1.09
+		how to see the top filters - 1.10
+	layer 2 - 1.14
+	layer 3 - 1.15
+	layer 4 - 1.16
+		"why are there so many dogs?" - 1.16 
+	layer 5 - 1.17
+	why is explainable AI important, medical - 1.20
+	
+error top 5 - 1.22
++=+=+=+=+=+=+=+= 10 - 30 thursday +=+=+=+=+=+=+=+=
 
 ================================================================================================================================
 ================================================================================================================================
