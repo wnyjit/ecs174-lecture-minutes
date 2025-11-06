@@ -425,7 +425,7 @@ CNN is an MLP with convolutions instead of linear layers - 1.09
 	feature extraction - 1.16
 		low,mid,high level - 1.19
 	flow of CNN - 1.19
-		spatial pooling, max pooling - 1.21
+		spatial pooling, max pooling, stride - 1.21
 +=+=+=+=+=+=+=+= 10 - 28 tuesday +=+=+=+=+=+=+=+=
 
 ================================================================================================================================
@@ -437,7 +437,7 @@ swift coding club - 6
 past lecture review - 8
 	combining convolutions while avoiding linearity - 9
 	ReLu, avoiding saturation - 11
-	spatial pooling, "reduce the amount of info we pass forward" - 18
+	spatial pooling, stride, "reduce the amount of info we pass forward" - 18
 	
 boat cnn example - 21
 	fully connected meaning - 
@@ -458,7 +458,7 @@ SIFT, AlexNet, deep learning, end to end, & history - 51
 	AlexNet and using GPU - 55
 	AlexNet changes the game - 1.04
 	
-looking inside what the model sees, explainable AI - 1.09
+looking inside what the model sees, explainable AI, top 9 patches - 1.09
 	layer 1 - 1.09
 		how to see the top filters - 1.10
 	layer 2 - 1.14
@@ -468,8 +468,62 @@ looking inside what the model sees, explainable AI - 1.09
 	layer 5 - 1.17
 	why is explainable AI important, medical - 1.20
 	
-error top 5 - 1.22
+error top 5, top 5 error - 1.22
 +=+=+=+=+=+=+=+= 10 - 30 thursday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 11 - 04 tuesday +=+=+=+=+=+=+=+=
+max pooling stride - 7
+	its still used today even though it doesnt improve speed - 11
+	
+final project proposal - 12
+
+midterm, "dont worry about it" - 13	
+
+previous lecture review - 14
+	top 9 patches , what the model sees - 14
+	tweaking pre-built models - 19
+	early exit - 19
+	"why would we want to reduce size?", edge devices, edge computing - 21
+	
+imageNet challenge - 22
+	top 5 error - 24
+	"human expert is stupid" - 27
+	comptetition cheating - 29
+			*mic out* - 32
+			*mic in* - 33
+			
+Resnet "going beyond 22 layers was difficult"  - 34
+	"if one layer doesnt work, the chain breaks" - 36
+	skip connection - 37
+	average pooling - 39
+	"why not one connection from the input all the way to the output - 42
+	resnet block - 42
+	
+	DenseNet - 43
+	Neural Architectural Search, NAS, AI improving model architecture - 44
+	
+	"why not a connection for every block instead of every other block?" - 45
+	skip connections are differentiable - 46
+	effective depth - 48
+	plain network vs resnet comparison - 50
+	
+BN batch normalization, handling the constant changing of layer inputs/outputs - 52
+	"normalizing the distribution" - 55
+	its several times faster - 55
+	parameters mew sigma / gamma beta - 58
+		"you can take this extra stuff out and be fine" - 1.00
+	"Do i need to keep this for the final model?", baking in parameters into the model weight and bias - 1.01
+
+deep learning packages & history: cafe, cuda, torch, lua - 1.08 - 1.08
+	cuda, nvidia, amd - 1.16
+		how companies get more customers - 1.18
+	
+coding on the midterm - 1.20
+	double sided hand written cheatsheet - 1.22
++=+=+=+=+=+=+=+= 11 - 04 tuesday +=+=+=+=+=+=+=+=
 
 ================================================================================================================================
 ================================================================================================================================
