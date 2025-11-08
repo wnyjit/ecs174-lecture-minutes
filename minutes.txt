@@ -474,7 +474,7 @@ error top 5, top 5 error - 1.22
 ================================================================================================================================
 ================================================================================================================================
 
-+=+=+=+=+=+=+=+= 11 - 04 tuesday +=+=+=+=+=+=+=+=
++=+=+=+=+=+=+=+= 11 - 4 tuesday +=+=+=+=+=+=+=+=
 max pooling stride - 7
 	its still used today even though it doesnt improve speed - 11
 	
@@ -517,13 +517,81 @@ BN batch normalization, handling the constant changing of layer inputs/outputs -
 		"you can take this extra stuff out and be fine" - 1.00
 	"Do i need to keep this for the final model?", baking in parameters into the model weight and bias - 1.01
 
-deep learning packages & history: cafe, cuda, torch, lua - 1.08 - 1.08
+deep learning packages & history: cafe, cuda, torch, lua - 1.08
 	cuda, nvidia, amd - 1.16
 		how companies get more customers - 1.18
 	
 coding on the midterm - 1.20
 	double sided hand written cheatsheet - 1.22
-+=+=+=+=+=+=+=+= 11 - 04 tuesday +=+=+=+=+=+=+=+=
++=+=+=+=+=+=+=+= 11 - 4 tuesday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 11 - 6 thursday +=+=+=+=+=+=+=+=
+past lecture review - 4
+	top-9 patches, imagenet challenge - 4
+	batch norm - 5
+		layer norm instead of batch norm - 7
+	resnet - 9
+	deep learning packages, pytorch - 10
+	
+adversarial, breaking CNNs - 12
+	designing adversarial - 13
+		black box, white box - 15
+	targeted vs no target attack - 17
+	modified gradient, "going up the hill not down the hill" - 18
+	
+	"this isnt practical", adversarial patch - 19
+		hillary clinton glasses - 24
+		defense against adversarial patch - 27
+		
+	simple solution, add adversarial images to training, adversarial training, adversarial example - 28
+		"its not the best solution" - 30
+		*mic out* - 30
+		*mic in* - 31
+	sharpness aware minimization - 31
+
+data augmentation (cropping, scale, flipping, angling...) - 36
+	"if you dont do augmentation in DNN, you will overfit" - 39
+	pytorch & augmentation - 40
+	we dont test on augmented images - 41
+	be careful of augmentation leaking from training to testing - 41
+	
+	augmentation is domain specific - 42
+			augmentation in test time, 10crop - 43
+		examples of when augmentation can go wrong,right - 43
+		
+dropout - 45
+	dont use it during test time - 48
+	pruning, permanently removing inactive neurons - 49
+	drop connect - 50
+	
+model ensemble, "why are there 30 people playing the violin when 1 would be fine?" - 51
+
+large datasets dont use augmentation - 55
+
+"augmentation should be done on the fly" - 56
+
+transfer learning, building models off small data sets - 57
+	frozen layers- 58
+	how it works, "feature learned through imagenet may be sufficient..." - 59
+	
+	the initial data set should be diverse, imagenet has many applications - 1.01
+	
+	"this visualization isnt that great" - 1.03
+	
+	the more data you have, the more of the model you train - 1.04
+		fine tuning - 1.05
+	pre training - 1.08
+	CNN comparison - 1.09
+	
+	transfer learning for image captions, open vocabulary, closed vocabulary - 1.11
+	
+parallel computation, hadoop, mapreduce - 1.14
+	gpu failure - 1.18
+model parallel, weight parallel, data parallel - 1.22
++=+=+=+=+=+=+=+= 11 - 6 thursday +=+=+=+=+=+=+=+=
 
 ================================================================================================================================
 ================================================================================================================================
