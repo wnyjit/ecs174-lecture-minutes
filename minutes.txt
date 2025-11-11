@@ -336,7 +336,7 @@ optimization is slow - 33
 		mini-batch & stochastic definitions - 37
 	IID independentent identically sampled - 38
 	EPOCH - 39
-	HHD harddrives are slow, ram is 42 - fast
+	HDD harddrives are slow, ram is 42 - fast
 	
 gradient descent quick refresh - 48
 	forward pass backward pass -  53
