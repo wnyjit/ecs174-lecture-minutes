@@ -337,9 +337,9 @@ optimization is slow - 33
 		mini-batch & stochastic definitions - 37
 	IID independentent identically sampled - 38
 	EPOCH - 39
-	HDD harddrives are slow, ram is 42 - fast
+	HDD harddrives are slow, ram is fast - 42
 	
-gradient descent quick refresh - 48
+gradient descent quick refresh - 48 
 	forward pass backward pass -  53
 	
 two types of compute - 55
@@ -424,7 +424,7 @@ CNN is an MLP with convolutions instead of linear layers - 1.09
 	tensor review - 1.09
 	weight mask, image, feature map, channels, convolutional layer, fully connected, & calculating their sizes - 1.10 
 	feature extraction - 1.16
-		low,mid,high level - 1.19
+		low level, mid level, high level - 1.19
 	flow of CNN - 1.19
 		spatial pooling, max pooling, stride - 1.21
 +=+=+=+=+=+=+=+= 10 - 28 tuesday +=+=+=+=+=+=+=+=
