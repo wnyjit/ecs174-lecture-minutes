@@ -269,7 +269,8 @@ MLP multi-layer perceptron - 17
 		we want derivable functions - 21
 	hidden layers / hidden neurons - 22
 		more neurons = more capacity - 23
-		finding the sweet spot, over-training- 25
+		depth vs width - 25
+		finding the sweet spot, over-training - 25
 			"i can always use SQL for 100%!" - 25
 	temperature prediction example - 26
 		ground truth - 27
@@ -304,7 +305,7 @@ gradient descent update rule / automatic learning rate - 1.02
 	chain rule review - 1.08
 	bringing it back into MLPs - 1.11
 		"this is time consuming" - 1.11
-	back propogration and the chain rule - 1.12
+	back propogation and the chain rule - 1.12
 		example - 1.14
 		forward pass - 1.20		
 +=+=+=+=+=+=+=+= 10 - 21 tuesday +=+=+=+=+=+=+=+=
