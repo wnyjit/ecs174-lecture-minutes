@@ -73,7 +73,7 @@ box filter algorithm / sums of rectangular regions - 26
 		cant be done with gaussian, and their is a big 1-time cost  - 34
 
 addressing constant blur to remove noise without removing detail - 35
-	bilateral bilter on a height field - 37
+	bilateral filter on a height field - 37
 		theory and general math behind it - 39
 			"big differences will have much less weight... the edge will not be smoothed out" - 40
 			"this is not convolution anymore" - 42
@@ -280,7 +280,7 @@ MLP multi-layer perceptron - 17
 			using absolute value vs squaring - 34
 				lasso - 38
 
-optimization framework, and loss minimization - 39
+optimization framework, and loss minimization - 38
 	argument / index of array - 40
 	w, freedom - 40
 	why we use 1/2 - 43
@@ -441,21 +441,21 @@ past lecture review - 8
 	spatial pooling, stride, "reduce the amount of info we pass forward" - 18
 	
 boat cnn example - 21
-	fully connected meaning - 
 	every layer has an activation after it - 23
-	softmax activation fubction, probability distribution - 25
-	long vector dimension, vectorization - 
+	fully connected meaning - 24
+	long vector dimension, vectorization - 24
+	softmax activation function, probability distribution - 25
 	"how i analyze a research paper" - 30
 	1-hot encoding - 31
 	dimension of tensor,vector - 32
-	"maybe i should stop recording" - 35
+			"maybe i should stop recording" - 35
 	calculating loss - 38
 	"it must be differentiable" - 44
 	non differentiable and reinforcement learning - 45
 	not using fully connected for convolution, "detect the cat anywhere in the image" - 49
 	
 SIFT, AlexNet, deep learning, end to end, & history - 51
-	lynette's digit detection - 53
+	LeNet digit detection - 53
 	AlexNet and using GPU - 55
 	AlexNet changes the game - 1.04
 	
