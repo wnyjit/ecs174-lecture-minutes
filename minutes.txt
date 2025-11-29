@@ -537,11 +537,11 @@ past lecture review - 4
 	resnet - 9
 	deep learning packages, pytorch - 10
 	
-adversarial, breaking CNNs - 12
-	designing adversarial - 13
+adversarial attack, breaking CNNs - 12
+	designing adversarial attack - 13
 		black box, white box - 15
 	targeted vs no target attack - 17
-	modified gradient, "going up the hill not down the hill" - 18
+	modified gradient, gradient ascent "going up the hill not down the hill" - 18
 	
 	"this isnt practical", adversarial patch - 19
 		hillary clinton glasses - 24
@@ -568,14 +568,14 @@ dropout - 45
 	pruning, permanently removing inactive neurons - 49
 	drop connect - 50
 	
-model ensemble, "why are there 30 people playing the violin when 1 would be fine?" - 51
+	model ensemble, "why are there 30 people playing the violin when 1 would be fine?" - 51
 
 large datasets dont use augmentation - 55
 
 "augmentation should be done on the fly" - 56
 
 transfer learning, building models off small data sets - 57
-	frozen layers- 58
+	frozen layers - 58
 	how it works, "feature learned through imagenet may be sufficient..." - 59
 	
 	the initial data set should be diverse, imagenet has many applications - 1.01
@@ -593,6 +593,181 @@ parallel computation, hadoop, mapreduce - 1.14
 	gpu failure - 1.18
 model parallel, weight parallel, data parallel - 1.22
 +=+=+=+=+=+=+=+= 11 - 6 thursday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 11 - 11 tuesday +=+=+=+=+=+=+=+=
+verterans day, nothing
++=+=+=+=+=+=+=+= 11 - 11 tuesday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 11 - 13 thursday +=+=+=+=+=+=+=+=
+midterm, nothing
++=+=+=+=+=+=+=+= 11 - 13 thursday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 11 - 18 tuesday +=+=+=+=+=+=+=+=
+"how was the exam? :)" - 8
+	final will be similar - 8
+
+past lecture review - 8
+	data augmentation - 9
+		bad augmentation - 9
+	transfer learning - 12
+			augmentation hurts early epochs - 13
+		fine tuning - 15
+			pre train - 16 
+	GPU training - 19
+	
+skip homework 3 or have homework 3 - 21
+
+GAN , generative adversarial learning , generative adversarial network - 24
+	random noise to generate a natural image - 26
+
+	Generator, Discriminator - 28
+		generator - 28
+			up convolution - 28
+		game theory - 31
+		discriminator - 31
+		training data vs fake data switch - 32
+		
+		training G, D - 32
+			"its a game" - 34
+					"its two layers appended to eachother" - 35
+			one layer maximizing loss, one layer minimizing loss - 35	
+		G and D have to have good balance - 37
+		discriminator may be used after training for - 39
+			use D as generative AI detector - 39
+					*mic out* - 39
+					*mic in* - 40
+				feeding AI to train a model is bad - 41
+					watermarking - 41
+			use D for transfer learning - 42
+					
+	Manifold space, where natural images live - 43
+	
+	GAN training car example - 47
+	
+	GAN training: local minima & local maxima at the same time, saddle point - 49
+		"its more difficult" - 51
+		
+	video GAN - 53
+		example videos - 58
+		humans are sensitive to faces - 1.00
+		the first frame should look like the input image - 1.02
+		
+applications of GAN - 1.05
+	generating pictures - 1.05
+	image to image translation - 1.08
+		cycle consistency - 1.09
+	text to image - 1.11
+	semantic image to photo translation - 1.13
+		creating simulations for self driving cars - 1.15
+	more image to image - 1.17
+	
+we will talk about diffusion model later - 1.21
++=+=+=+=+=+=+=+= 11 - 18 tuesday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 11 - 20 thursday +=+=+=+=+=+=+=+=
+previous lecture review - 4
+	GAN generative adversarial network recap - 5
+	
+	manifold space - 6
+		3d probability distribution - 8
+		learning distribution through sampling (genAI does this) - 9
+		
+		the early GPT model, text completion - 18
+		
+	GAN training - 21
+		latent vector - 23
+		
+diffusion models - 26
+	turing test - 27
+	
+	forward diffusion, adding noise - 28
+	backward diffusion, removing noise, "each time it gets closer to the blanket" - 30
+	"if its not on the manifold its because noise has been added" - 32
+	most genAI models (dalle) are diffusion based - 32
+		no latent space - 34
+			CFG classifier free guidance  - 35
+	we tell the model the type of noise not the amount of noise - 39
+	
+	LADA LLaDA large language diffusion models - 42
+	
+	super resolution - 44
+		why it shouldnt be used in medical - 46
+	
+	image to image translation - 49
+	3d shape asset generation - 50
+	
+	non conditional model "its a natural image but it doesnt really help me" - 55
+	
+object detectoin and image segmentation - 56
+	classification vs semantic segmentation vs object detection vs instance segmentation - 56
+
+	semantic segmentation - 59
+		sliding window method "its too expensive" - 59
+		convolution method - 1.01
+		fully convolution method, hour glass - 1.02
+			upsampling, unpooling, max unpooling - 1.04
+			fractional stride - 1.08
+			
+	object detection - 1.11
+		single object detection - 1.11
+		why we do multitask loss instead of two models, shared learning - 1.16
+		mutliple object detection - 1.21
+			sliding window - 1.21
+			region proposal generation rcnn - 1.22
++=+=+=+=+=+=+=+= 11 - 20 thursday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 11 - 25 tuesday +=+=+=+=+=+=+=+=
+midterm, hw3, gpu acess - 4
+
+previous lecture recap - 10
+	classification vs semantic segmentation vs instance segmentation - 11
+	semantic segmentation - 11
+			transformers - 13
+	instance segmentation - 15
+		multitask learning, multitask loss - 18
+		detecting multiple objects - 22
+			precision & recall - 23
+
+rcnn  - 25
+	history - 25
+	rcnn - 30
+	fast rcnn - 32
+	faster rcnn - 38
+	
+SSD, single shot object detection, single stage object detection  - 40
+	YOLO you only look once - 40
+	backbone, meta architecture, image size - 47
+		"bigger backbones work better" - 48
+	mask rcnn - 50
+		joint prediction - 53
+		
+scene graph - 58
+3d object detection - 1.01
+
+depth detection , depth estimation - 1.06
+	multiple cameras, ML method, lidar/radar, sonar, ToF time of flight - 1.07
+	
+	lidar cloud points as input into NN - 1.12
+		pointNet - 1.13
+		xbox kinect and ToF - 1.16
+		
+stereo vision - 1.19
++=+=+=+=+=+=+=+= 11 - 25 tuesday +=+=+=+=+=+=+=+=
 
 ================================================================================================================================
 ================================================================================================================================
