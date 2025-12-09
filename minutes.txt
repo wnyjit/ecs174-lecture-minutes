@@ -771,3 +771,62 @@ stereo vision - 1.19
 
 ================================================================================================================================
 ================================================================================================================================
+
++=+=+=+=+=+=+=+= 11 - 27 thursday +=+=+=+=+=+=+=+=
+nothing. thanksgiving holiday
++=+=+=+=+=+=+=+= 11 - 27 thursday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 12 - 02 tuesday +=+=+=+=+=+=+=+=
+previous lecture recap - 6
+	multiple object detection, sliding window, object nest region proposal - 7
+	rcnn fast rcnn faster rcnn - 8
+	mask rcnn - 11
+	
+RNN Recurrent Neural Network - 13
+	one to one, one to many, many to one, many to many - 17
+	hidden state - 21
+		example - 24
+	you can infinite number of layers - 25
+	training, "what is the problem with back propogation?" - 27
+	
+	sequence to sequence, language translation - 32
+		encoder decoder - 39
+		encoder text to speech - 42
+		
+	example training - 49
+			*mic out* - 52
+			*mic in* - 53
+	temperature - 55
+	embedding matrix embedding layer embedding vector - 59
+	
+	truncated back propogation, window based loss - 1.05
+	
+	min-char-rnn.py - 1.09
+	
+	shakespeare, textbook, C, example example - 1.10
+	
+	interpretable cells - 1.19
++=+=+=+=+=+=+=+= 12 - 02 tuesday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
++=+=+=+=+=+=+=+= 12 - 04 thursday +=+=+=+=+=+=+=+=
+midterm and final - 6
+
+previous lecture recap - 8
+	encoder decoder - 11
+	truncated back propogation - 13
+	interpretable cells - 14
+	
++=+=+=+=+=+=+=+= 12 - 04 thursday +=+=+=+=+=+=+=+=
+
+================================================================================================================================
+================================================================================================================================
+
+that is all !
+
+( ╥﹏╥) ノシ
