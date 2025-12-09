@@ -808,7 +808,7 @@ RNN Recurrent Neural Network - 13
 	
 	shakespeare, textbook, C, example example - 1.10
 	
-	interpretable cells - 1.19
+	interpretable cells, emerging properties - 1.19
 +=+=+=+=+=+=+=+= 12 - 02 tuesday +=+=+=+=+=+=+=+=
 
 ================================================================================================================================
@@ -818,10 +818,28 @@ RNN Recurrent Neural Network - 13
 midterm and final - 6
 
 previous lecture recap - 8
-	encoder decoder - 11
+	variable length input sequences, output sequences - 9
+	sequence to sequence learning, encoder decoder - 10
 	truncated back propogation - 13
-	interpretable cells - 14
+	interpretable cells, emerging properties - 14
+		room vs object detection emerging behavior - 15	
+
+pros and cons of RNN, RNN tradeoffs - 19
+
+image captioning, cnn + rnn - 21
+		token - 22
+		
+model failing - 27
+	corner cases, tail distribution, not enough input, women surfboard example - 27
+	VQA Visual Question Answering, dataset bias - 29
 	
+LSTM long short term memory - 33
+
+"fill out the course evaluation" - 34
+
+
+	
+
 +=+=+=+=+=+=+=+= 12 - 04 thursday +=+=+=+=+=+=+=+=
 
 ================================================================================================================================
