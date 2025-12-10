@@ -819,7 +819,7 @@ RNN Recurrent Neural Network - 13
 ================================================================================================================================
 ================================================================================================================================
 
-+=+=+=+=+=+=+=+= 12 - 04 thursday +=+=+=+=+=+=+=+= (i understood NOTHING from this lecture! quality of minutes are low.)
++=+=+=+=+=+=+=+= 12 - 04 thursday +=+=+=+=+=+=+=+=
 midterm and final - 6
 
 previous lecture recap - 8
@@ -864,7 +864,7 @@ transformer, transformer encoder transformer decoder - 1.17
 	image captioning using transformer, VIT Vision transformer - 1.19
 	"use can input any medium!" - 1.20
 	transformers dont see sequences - 1.21
-+=+=+=+=+=+=+=+= 12 - 04 thursday +=+=+=+=+=+=+=+=  (i understood NOTHING from this lecture! quality of minutes are low.)
++=+=+=+=+=+=+=+= 12 - 04 thursday +=+=+=+=+=+=+=+= 
 
 ================================================================================================================================
 ================================================================================================================================
