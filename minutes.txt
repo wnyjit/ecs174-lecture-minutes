@@ -797,10 +797,14 @@ RNN Recurrent Neural Network - 13
 		encoder decoder - 39
 		encoder text to speech - 42
 		
+	various question answering - 43
+	
 	example training - 49
 			*mic out* - 52
 			*mic in* - 53
+			
 	temperature - 55
+	
 	embedding matrix embedding layer embedding vector - 59
 	
 	truncated back propogation, window based loss - 1.05
@@ -809,7 +813,7 @@ RNN Recurrent Neural Network - 13
 	
 	shakespeare, textbook, C, example example - 1.10
 	
-	interpretable cells, emerging properties - 1.19
+	interpretable cells, emerging properties - 1.18
 +=+=+=+=+=+=+=+= 12 - 02 tuesday +=+=+=+=+=+=+=+=
 
 ================================================================================================================================
