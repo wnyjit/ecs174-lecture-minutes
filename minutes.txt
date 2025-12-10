@@ -649,7 +649,7 @@ GAN , generative adversarial learning , generative adversarial network - 24
 					watermarking - 41
 			use D for transfer learning - 42
 					
-	Manifold space, where natural images live - 43
+	Manifold space, latent space data space, where natural images live - 43
 	
 	GAN training car example - 47
 	
@@ -684,7 +684,7 @@ previous lecture review - 4
 		3d probability distribution - 8
 		learning distribution through sampling (genAI does this) - 9
 		
-		the early GPT model, text completion - 18
+		the early GPT model, text completion - 16
 		
 	GAN training - 21
 		latent vector - 23
@@ -725,7 +725,7 @@ object detectoin and image segmentation - 56
 		why we do multitask loss instead of two models, shared learning - 1.16
 		mutliple object detection - 1.21
 			sliding window - 1.21
-			region proposal generation rcnn - 1.22
+			region proposal generation rcnn, object nest - 1.22
 +=+=+=+=+=+=+=+= 11 - 20 thursday +=+=+=+=+=+=+=+=
 
 ================================================================================================================================
@@ -739,7 +739,7 @@ previous lecture recap - 10
 	semantic segmentation - 11
 			transformers - 13
 	instance segmentation - 15
-		multitask learning, multitask loss - 18
+		shared learning, multitask learning, multitask loss - 18
 		detecting multiple objects - 22
 			precision & recall - 23
 
@@ -784,6 +784,7 @@ previous lecture recap - 6
 	multiple object detection, sliding window, object nest region proposal - 7
 	rcnn fast rcnn faster rcnn - 8
 	mask rcnn - 11
+	open vocabulary - 11
 	
 RNN Recurrent Neural Network - 13
 	one to one, one to many, many to one, many to many - 17
@@ -824,7 +825,7 @@ previous lecture recap - 8
 	interpretable cells, emerging properties - 14
 		room vs object detection emerging behavior - 15	
 
-pros and cons of RNN, RNN tradeoffs - 19
+pros and cons of RNN, RNN tradeoffs, slow, cant parallelize - 19
 
 image captioning, cnn + rnn - 21
 		token - 22
